@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
 
-int sumMultiples(int n) 
+int sumMultiples(int a, int b, int n) 
 {
     int result = 0, temp = 0;
     std::cout << "Multiples of 3 or 5 below " << n << ":\n";
 
     for (int i = 1; i < n; i++) 
     {
-        if (i%3 == 0 || i%5 == 0)
+        if (i%a == 0 || i%b == 0)
         {
             std::cout << i << " ";
             result += i;
@@ -21,7 +21,7 @@ int main()
 {
     std::cout << "Project Euler: Problem 1 - Multiples of 3 and 5.\n\n";
 
-    std::cout << "\nSum of Multiples: " << sumMultiples(1000) << "\n\n";
+    std::cout << "\nSum of Multiples: " << sumMultiples(3, 5, 1000) << "\n\n";
 }
 
 /*
